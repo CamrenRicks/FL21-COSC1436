@@ -21,6 +21,7 @@ string semester = "Fall 2021";
 
 void showMenu();
 void menu18Smiley(int);
+void menu13Ricks(float);
 
 // ***************************************************************
 // END OF FUNCTION PROTOTYPE AREA
@@ -77,7 +78,7 @@ int main()
                 break;
             case 12:                 // Naz - call to function goes here
                 break;
-            case 13:                 // Ricks - call to function goes here
+            case 13:                 menu13Ricks(10.50);
                 break;
             case 14:                 // Rodriguez - call to function goes here
                 break;
@@ -195,3 +196,27 @@ void menu18Smiley(int numberOfTimes)
     cout << endl;
     cout << endl;
 }
+
+//	*********************************************************************
+//	menu13Ricks
+//
+//	task:	  This function takes rate and time and multiples them to
+//	          get gross pay and then finds net pay by subtracting 15%.
+// 		  (Assuming they have starting pay "Raising Canes")
+//	data in:  pay rate and time in hours worked
+//	data out: the gross and net pay
+//
+//	********************************************************************
+void menu13Ricks(rate);
+float gross = 0;
+float net = 0;
+int time = 0;
+cout << "Please input the number of hours worked" << endl;
+cin >> time;
+cout << "Calculating..." << endl;
+
+gross = rate * time;
+net = gross - (gross * .15);
+	cout << "The gross pay is $" << gross << endl;
+
+	cout << "The net pay is $" << net << endl;
